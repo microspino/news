@@ -8,8 +8,13 @@ http://news.minqi-pan.com
 
 - [cs.AI: Artificial Intelligence](https://arxiv.org/list/cs.AI/recent)
 - [cs.CV: Computer Vision and Pattern Recognition](https://arxiv.org/list/cs.CV/recent)
+- [cs.DS: Data Structures and Algorithms](https://arxiv.org/list/cs.DS/recent)
+- [cs.DC: Distributed, Parallel, and Cluster Computing](https://arxiv.org/list/cs.DC/recent)
 - [cs.LG: Machine Learning](https://arxiv.org/list/cs.LG/recent)
+- [cs.NE: Neural and Evolutionary Computing](https://arxiv.org/list/cs.NE/recent)
+- [cs.PL: Programming Languages](https://arxiv.org/list/cs.PL/recent)
 - [cs.RO: Robotics](https://arxiv.org/list/cs.RO/recent)
+- [cs.SE: Software Engineering](https://arxiv.org/list/cs.SE/recent)
 
 ## Hacker News
 

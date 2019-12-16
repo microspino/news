@@ -4,8 +4,13 @@ class Arxiv < ApplicationRecord
   URLs = [
     'https://arxiv.org/list/cs.AI/recent',
     'https://arxiv.org/list/cs.CV/recent',
+    'https://arxiv.org/list/cs.DS/recent',
+    'https://arxiv.org/list/cs.DC/recent',
     'https://arxiv.org/list/cs.LG/recent',
+    'https://arxiv.org/list/cs.NE/recent',
+    'https://arxiv.org/list/cs.PL/recent',
     'https://arxiv.org/list/cs.RO/recent',
+    'https://arxiv.org/list/cs.SE/recent',
   ]
 
   def self.fetch_for(day)
@@ -15,9 +20,12 @@ class Arxiv < ApplicationRecord
         last = nil
         dl.children.each do |child|
           if child.name == 'dt'
-            last = create!(key: child.css('a[title=Abstract]').text.to_s.strip.split('arXiv:')[-1].to_s.strip, day_id: day.id)
+            key = child.css('a[title=Abstract]').text.to_s.strip.split('arXiv:')[-1].to_s.strip
+            last = where(key: key).first
+            last = create!(key: key, day_id: day.id) if last.nil?
           elsif child.name == 'dd'
             last.update_attribute(:title, child.css('div.list-title').text.to_s.strip.split('Title: ')[-1].to_s.strip)
+            last.update_attribute(:day_id, day.id)
           end
         end
       end
