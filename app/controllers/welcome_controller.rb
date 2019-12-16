@@ -4,5 +4,6 @@ class WelcomeController < ApplicationController
     @arr = []
     @arr += @day.arxivs.to_a
     @arr += @day.hns.to_a
+    @arr += @day.gts.to_a
   end
 end

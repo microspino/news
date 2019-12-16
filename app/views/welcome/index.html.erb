@@ -5,6 +5,8 @@
       <li><a href="https://arxiv.org/pdf/<%=raw item.key %>"><%= item.title %></a></li>
     <% elsif item.is_a? Hn %>
       <li><a href="<%=raw item.url %>"><%= item.title %></a></li>
+    <% elsif item.is_a? Gt %>
+      <li><a href="https://github.com<%=raw item.key %>"><%= item.title %></a></li>
     <% end %>
   <% end %>
 </ol>
