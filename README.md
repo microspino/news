@@ -1,4 +1,4 @@
-# 📰News
+# 📰 News
 
 One-page daily news from arXiv, Hacker News and GitHub Trending.
 
