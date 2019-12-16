@@ -1,24 +1,12 @@
-# README
+# News
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Daily news from arXiv, Hacker News and GitHub Trending.
 
-Things you may want to cover:
+http://news.minqi-pan.com
 
-* Ruby version
+## arXiv Subjects
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- cs.AI: [Artificial Intelligence](https://arxiv.org/list/cs.AI/recent)
+- cs.CV: [Computer Vision and Pattern Recognition](https://arxiv.org/list/cs.CV/recent)
+- cs.LG: [Machine Learning](https://arxiv.org/list/cs.LG/recent)
+- cs.RO: [Robotics](https://arxiv.org/list/cs.RO/recent)
