@@ -1,4 +1,4 @@
-<h2><%= @day.day.strftime("%A, %b %d, %Y") %></h2>
+<h2>📰 <%= @day.day.strftime("%A, %b %d, %Y") %></h2>
 <ol>
   <% @arr.shuffle.each do |item| %>
     <% if item.is_a? Arxiv %>
