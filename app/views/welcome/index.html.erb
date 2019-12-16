@@ -2,7 +2,9 @@
 <ol>
   <% @arr.shuffle.each do |item| %>
     <% if item.is_a? Arxiv %>
-      <li><a href="https://arxiv.org/pdf/<%= item.key %>"><%= item.title %></a></li>
+      <li><a href="https://arxiv.org/pdf/<%=raw item.key %>"><%= item.title %></a></li>
+    <% elsif item.is_a? Hn %>
+      <li><a href="<%=raw item.url %>"><%= item.title %></a></li>
     <% end %>
   <% end %>
 </ol>
