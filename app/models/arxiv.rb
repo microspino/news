@@ -7,10 +7,12 @@ class Arxiv < ApplicationRecord
     'https://arxiv.org/list/cs.DS/recent',
     'https://arxiv.org/list/cs.DC/recent',
     'https://arxiv.org/list/cs.LG/recent',
+    'https://arxiv.org/list/cs.MS/recent',
     'https://arxiv.org/list/cs.NE/recent',
     'https://arxiv.org/list/cs.PL/recent',
     'https://arxiv.org/list/cs.RO/recent',
     'https://arxiv.org/list/cs.SE/recent',
+    'https://arxiv.org/list/cs.SC/recent',
   ]
 
   def self.fetch_for(day)
