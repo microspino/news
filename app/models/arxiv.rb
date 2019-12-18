@@ -2,6 +2,7 @@ class Arxiv < ApplicationRecord
   belongs_to :day
 
   URLs = [
+    'https://arxiv.org/list/math/recent',
     'https://arxiv.org/list/cs.AI/recent',
     'https://arxiv.org/list/cs.CV/recent',
     'https://arxiv.org/list/cs.DS/recent',
@@ -13,6 +14,7 @@ class Arxiv < ApplicationRecord
     'https://arxiv.org/list/cs.RO/recent',
     'https://arxiv.org/list/cs.SE/recent',
     'https://arxiv.org/list/cs.SC/recent',
+    'https://arxiv.org/list/stat/recent',
   ]
 
   def self.fetch_for(day)

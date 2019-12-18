@@ -6,6 +6,7 @@ http://news.minqi-pan.com
 
 ## arXiv
 
+- [math: Mathematics](https://arxiv.org/list/math/recent)
 - [cs.AI: Artificial Intelligence](https://arxiv.org/list/cs.AI/recent)
 - [cs.CV: Computer Vision and Pattern Recognition](https://arxiv.org/list/cs.CV/recent)
 - [cs.DS: Data Structures and Algorithms](https://arxiv.org/list/cs.DS/recent)
@@ -17,6 +18,7 @@ http://news.minqi-pan.com
 - [cs.RO: Robotics](https://arxiv.org/list/cs.RO/recent)
 - [cs.SE: Software Engineering](https://arxiv.org/list/cs.SE/recent)
 - [cs.SC: Symbolic Computation](https://arxiv.org/list/cs.SC/recent)
+- [stat: Statistics](https://arxiv.org/list/stat/recent)
 
 ## Hacker News
 
