@@ -2,7 +2,7 @@
 
 One-page daily news from arXiv, Hacker News and GitHub Trending.
 
-http://news.minqi-pan.com
+http://news.microspino.com
 
 ## arXiv
 
