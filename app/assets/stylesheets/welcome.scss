@@ -1,3 +1,14 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+#news {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5px;
+}
+
+body {
+  font: 75% "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+}

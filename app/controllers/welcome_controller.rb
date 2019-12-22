@@ -1,9 +1,9 @@
 class WelcomeController < ApplicationController
   def index
-    @day = Day.first
-    @arr = []
-    @arr += @day.arxivs.to_a
-    @arr += @day.hns.to_a
-    @arr += @day.gts.to_a
+    @day = Day.first || Day.new(day: Date.today)
+    
+    @arxivs = @day.arxivs.shuffle
+    @hns = @day.hns.shuffle
+    @githubs = @day.gts.shuffle
   end
 end

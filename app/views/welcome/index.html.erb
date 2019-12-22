@@ -1,12 +1,18 @@
-<h2>📰 <%= @day.day.strftime("%A, %b %d, %Y") %></h2>
-<ol>
-  <% @arr.shuffle.each do |item| %>
-    <% if item.is_a? Arxiv %>
-      <li><a href="https://arxiv.org/pdf/<%=raw item.key %>"><%= item.title %></a></li>
-    <% elsif item.is_a? Hn %>
-      <li><a href="<%=raw item.url %>"><%= item.title %></a></li>
-    <% elsif item.is_a? Gt %>
-      <li><a href="https://github.com<%=raw item.key %>"><%= item.title %></a></li>
-    <% end %>
-  <% end %>
-</ol>
+<h2><%= @day.day.strftime("%A, %b %d, %Y") %></h2>
+
+<div id="news">
+  <section id="arxivs">
+    <h5>Arxiv</h5>
+    <%= render(@arxivs) || content_tag(:p, 'No records') %>
+  </section>
+
+  <section id="hns">
+    <h5>Hacker News</h5>
+    <%= render(@hns) || content_tag(:p, 'No records') %>
+  </section>
+  
+  <section id="githubs">
+    <h5>Github</h5>
+    <%= render(@githubs) || content_tag(:p, 'No records') %>
+  </section>
+</div>
